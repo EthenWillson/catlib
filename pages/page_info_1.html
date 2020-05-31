@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style/page_info_1.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@2.1/lib/index.css">
+
+    <title>添加信息1</title>
+</head>
+
+<body>
+
+<div id="mainbox" >
+    
+    <div id="topdiv">
+        <div id="button_return" v-on:click="console.log('wtf');window.location.href='./login.html'">
+            <img id="button_pic" src="..\pic\UI\return_btn.svg">
+        </div>
+    </div>
+    
+    
+    <div id="title">
+        <van-row id="points" type="flex" justify="end" gutter="8">
+            <van-col span="6"><img class="points" src="../pic/UI/orange_point.svg"></van-col>
+            <van-col span="6"><img class="points" src="../pic/UI/gray_point.svg"></van-col>
+            <van-col span="6"><img class="points" src="../pic/UI/gray_point.svg"></van-col>
+            <van-col span="6"><img class="points" src="../pic/UI/gray_point.svg"></van-col>
+        </van-row>
+        添加情报
+    </div>
+    <div id="location_mainbox">
+        <p class="text_title">位置</p>
+        <p class="text">在哪里发现了这只猫？它的活动范围在哪里？</p>
+        <div id="dropdown">
+            <select id="location" class="information" v-model="selected" placeholder="区域">
+              <option disabled value=undefined selected="selected">请选择区域</option>
+              <option value="1">东九</option>
+              <option value="2">西十二</option>
+              <option value="3">青创空间</option>
+            </select>
+        </div>
+        <!-- <van-dropdown-menu id="dropdown">
+            <van-dropdown-item v-model="value" :options="option" />
+        </van-dropdown-menu> -->
+        <p class="text">具体地点（精确到楼栋或地标）</p>
+        <van-cell-group>
+            <van-field id="location_specific" class="information" v-model="value" placeholder="如：韵苑五栋；中操；" />
+        </van-cell-group>
+
+    </div>
+    <div id="resource">
+        <p class="text_title">照片</p>
+        <p class="text">上传猫猫的照片。照片上传之前会经过审核，请保证照片清晰，猫的特征明显，并且要足够可爱&sim;</p>
+        <div id="photo_and_description">
+            <div id="photos">
+                <van-uploader id="photoList" v-model="value" multiple  preview-size="112px">
+                <img src="../pic/UI/camera_btn.svg">
+                </van-uploader>
+            </div>
+            <div id="description" class="information">
+                <van-field id="photo_description" v-model="value" rows="4" autosize type="textarea" placeholder="照片的描述（可选）：这张照片是在哪里拍的？什么时候？它在做什么？"/>
+            </div>
+            <!-- <description v-for="item in items" :i="item" :class="items"></description> -->
+        </div>
+    </div>
+
+    <div id="button_next">
+        <img src = "../pic/UI/next_btn_abled.svg">        
+    </div>
+
+</div>
+</body>
+<script src="../vue/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vant@2.1/lib/vant.min.js"></script>
+<script src="../js/page_info_1.js"></script>
+<script src="../js/passValue.js"></script>
+</html>

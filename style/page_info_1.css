@@ -1,0 +1,146 @@
+html
+{
+    top: 0px;
+    height: 100%;
+    left: 0px;
+    width: 100%;
+    /* overflow: hidden; */
+}
+body
+{
+    background-color:#F4EDD4;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    /* overflow: hidden; */
+    position: relative;
+    top: 0px;
+    height: 100%;
+    left: 0px;
+    width: 100%;
+    overflow-x: hidden;
+}
+div
+{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+#topdiv
+{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 72px;
+    background: white;
+
+
+}
+#mainbox
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    font-family: "黑体";
+}
+#button_return
+{
+    position: relative;
+    height: 100%;
+    left: 0px;
+    width: 10%;
+
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+#button_pic
+{
+    position: relative;
+    height: 32px;
+    width: 32px;
+    left: 8px;
+    top: 32px;
+}
+#title
+{    
+    padding: 16px 0px 16px 16px;
+    position: relative;
+    width: 95%;
+    height: 24px;
+
+    font-size: 24px;
+    font-weight: bold;
+}
+#points
+{
+    position: absolute;
+    left: 288px;    
+}
+.points
+{
+    height: 16px;
+    width: 16px;
+}
+p
+{
+    margin: 16px 0px 16px 0px;
+}
+#location_mainbox
+{
+    position: relative;
+    padding: 0px 0px 16px 16px;
+    width: 92%;
+}
+.text_title
+{
+    font-size: 24px;
+    font-weight: bold;
+
+}
+.text
+{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 26px;
+}
+#dropdown
+{
+    width: 100%;
+}
+#location
+{
+    width: 100%;
+    height: 48px;
+    border: 0px;
+    padding: 8px;
+}
+#resource
+{
+    position: relative;
+    padding: 0px 0px 16px 16px;
+    width: 92%;
+}
+#photos
+{
+    position: absolute;
+    width: 112px
+}
+#description
+{
+    position: absolute;
+    width: 241px;
+    left: 150px;
+    height: 112px;
+}
+#button_next
+{
+    position: fixed;
+    left: 248px;
+    width: 128px;
+    height: 48px;
+    bottom: 16px;
+}
